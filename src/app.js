@@ -24,6 +24,8 @@ app.use('/api/auth',          require('./routes/auth/authRoutes'));
 
 // Rutas del Sistema
 app.use('/api/categorias', require('./routes/categorias/categorias.routes.js'));
+app.use('/api/pedidos',    require('./routes/Pedidos/pedidos.routes'));
+app.use('/api/pedidos', require('./controllers/pedidos/pedidos.routes'));
 
 // Rutas del Módulo de Productos
 app.use('/api/productos',  require('./routes/Productos/productos.routes'));
